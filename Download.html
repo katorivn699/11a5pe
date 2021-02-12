@@ -38,11 +38,48 @@
     background-repeat: no-repeat;
   }
   .nen {
-    height: 2300px;
+    height: 2400px;
     background-image: url('nen.jpg');
     background-size: 100% 100%
     background-repeat: no-repeat;
   }
+  .button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
   </style>
 </head>
 <body>
@@ -84,8 +121,11 @@
       </div>
       <div class="download"></div>
       <br>
-      <a class="btn btn-success"  href="https://drive.google.com/file/d/1U0YtOKqZbaqZLc8lnJCl02D9jqqwf9uT/view?usp=sharing" role="button"> Download</a>
-      <br><p></p>
+      <dir class="text-center">
+      <a class="button"  href="https://drive.google.com/file/d/1U0YtOKqZbaqZLc8lnJCl02D9jqqwf9uT/view?usp=sharing" role="button"><span>Download</span></a>
+      </dir>
+      <br>
+      <p></p>
       <p style="color: white">Có thể dùng các phần mềm như rufus hoặc isotousb để làm</p>
       <p style="color: white">Đầu tiền format USB để cài:</p>
       <div class="format"></div><br>
@@ -101,9 +141,10 @@
       <h2 style="color: white"> Others App</h2>
       <h5 style="color: white"> Date : 11.2.2021</h5>
       <p style="color: white"> Dùng để dùng kèm theo winPE(Không cài được hẳn vào:>)</p>
-      <a class="btn btn-success"  href="https://drive.google.com/file/d/1ZKR2bhYJiooakTLBoJajJi3L0JWJIvHW/view?usp=sharing" role="button"> Download</a>
       <br>
-      <p>      </p>
+      <a class="button" href="https://drive.google.com/file/d/1ZKR2bhYJiooakTLBoJajJi3L0JWJIvHW/view?usp=sharing" role="button"><span>Download</span></a>
+      <br>
+      <p></p>
       </div>
     </div>
 
@@ -112,7 +153,8 @@
 </div>
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p>Liên hệ với chúng tôi</p>
-  <p>Contact us : <a href="https://www.facebook.com/Duong.Anh2212/">Duong Nhat Anh</a>
+  <p>Contact us : <a href="https://www.facebook.com/Duong.Anh2212/">Duong Nhat Anh</a>.</p>
+  <p><b>Được thực hiện bởi Dương Nhật Anh - Tổ trưởng tổ 3 lớp 11A5</b></p>
 </div>
 
 </body>
